@@ -4,12 +4,16 @@ pipeline {
    options {
        ansiColor('xterm')
      }
-     stages {
 
-            stage('Terraform Apply') {
-                steps {
-                  sh 'make'
-                }
-            }
-        }
-     }
+   }
+       stages {
+       stage('Terraform Apply') {
+           steps {
+             sh 'make'
+
+           }
+       }
+   }
+}
+
+
