@@ -1,18 +1,17 @@
 pipeline {
-   agent { label 'workstation'}
+  agent { label 'workstation'}
 
-   options {
-       ansiColor('xterm')
-     }
+  options {
+    ansiColor('xterm')
+  }
 
-   }
-       stages {
-       stage('Terraform Apply') {
-           steps {
-             sh 'make apply'
-           }
-       }
-   }
+  stages {
+    stage('Terraform Apply') {
+      steps {
+        sh 'make apply'
+      }
+    }
+
+  }
+
 }
-
-
