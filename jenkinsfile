@@ -10,7 +10,6 @@ pipeline {
        stage('Terraform Apply') {
            steps {
              sh 'make apply'
-
            }
        }
    }
